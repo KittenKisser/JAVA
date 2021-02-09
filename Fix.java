@@ -16,40 +16,40 @@ int x = n;
 int y = n;
 int z = 1;
 
-//ok
-for (int line = 1; line <= n; ++line)//ok
+
+for (int line = 1; line <= n; ++line)
 {
 
-for (int s = 1; s <= line; ++s)//ok
-System.out.print(' ');
+for (int s = 1; s <= line; ++s)
+	System.out.print(' ');
 
-for (int ld = x; ld >= 1; --ld)//ok
-System.out.print(ld);
+for (int ld = x; ld >= 1; --ld)
+	System.out.print(ld);
 
-for (int rd = 1; rd <= x; ++rd)//ok
-System.out.print(rd);
-System.out.println();
-x--;
-}
+for (int rd = 1; rd <= x; ++rd)
+	System.out.print(rd);
+	System.out.println();
+	x--;
+}//end for
 //lower half
-for (int line = 1; line <= n; ++line)//ok
+for (int line = 1; line <= n; ++line)
 {
 	
-for (int s = y; s >= 1; --s)//ok
-System.out.print(' ');
+	for (int s = y; s >= 1; --s)
+		System.out.print(' ');
 
-for (int ld = z; ld >= 1; --ld)
-System.out.print(ld);
+	for (int ld = z; ld >= 1; --ld)
+		System.out.print(ld);
 
-for (int rd = 1; rd <= line; ++rd)
-System.out.print(rd);
-System.out.println();
-z++;
-y--;
-}
+	for (int rd = 1; rd <= line; ++rd)
+		System.out.print(rd);
+		System.out.println();
+		z++;
+		y--;
+}//end for
 
 
 
 stdIn.close();
-}
-}
+}//end main
+}//end fix
